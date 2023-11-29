@@ -10,7 +10,7 @@ Le programme effectue :
 - l'affichage d'un message indiquant le succès ou l'échec du téléchargement
 - l'affichage d'un tableau ds resultats.
 
-<p>l'application peut etre visualisée  à cet adresse :<a href="http://amandine.cimmino.go.yj.fr/holdpicture/"></a>hébergée sur planet hoster<p>
+<p>l'application peut etre visualisée  à cette adresse :<a href="http://amandine.cimmino.go.yj.fr/holdpicture/">http://amandine.cimmino.go.yj.fr/holdpicture/"</a>hébergée sur planet hoster<p>
  <p>Pour recuperer les images et profiter de toute la fonctionnalité de cette application vous pouvez:</p>
  <ul>
    <li> cloner ce repertoire en local avec gitclone dans votre terminal</li>
