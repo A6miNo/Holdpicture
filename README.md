@@ -9,3 +9,5 @@ Le programme effectue :
 - l'enregistrement locale des images
 - l'affichage d'un message indiquant le succès ou l'échec du téléchargement
 - l'affichage d'un tableau ds resultats.
+
+<p>l'application peut etre visualisée mais elle doit être utiliser en locale afin de récuperer les images.</p>
