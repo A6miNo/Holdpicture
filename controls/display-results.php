@@ -1,4 +1,6 @@
-<?php if (count($results) > 0) : ?>
+<?php
+
+if (count($results) > 0) : ?>
     <h2>Résultats du Traitement :</h2>
     <table border="1">
         <thead>
@@ -16,6 +18,8 @@
             <?php endforeach; ?>
         </tbody>
     </table>
+
+
 <?php else : ?>
     <p>Aucun résultat à afficher.</p>
 <?php endif; ?>

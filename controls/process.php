@@ -4,11 +4,11 @@ if ($_FILES["csvFile"]["error"] == 0) {
     // Chemin temporaire du fichier téléchargé
     $tmpFilePath = $_FILES["csvFile"]["tmp_name"];
 
-    // Déplace le fichier téléchargé vers un emplacement permanent
+    // Déplace le fichier téléchargé vers un emplacement permanent (dossier "uploads")
     $csvFilePath = "uploads/" . $_FILES["csvFile"]["name"];
     move_uploaded_file($tmpFilePath, $csvFilePath);
 
-    // Ouvrir le fichier CSV en lecture
+    // Ouvre le fichier CSV en lecture
     $csvFile = fopen($csvFilePath, 'r');
 
     if ($csvFile !== false) {
@@ -57,8 +57,8 @@ if ($_FILES["csvFile"]["error"] == 0) {
         // Fermer le fichier
         fclose($csvFile);
     } else {
-        echo "Erreur lors de l'ouverture du fichier CSV." . PHP_EOL;
+        echo json_encode(['error' => 'Erreur lors de l\'ouverture du fichier CSV.']);
     }
 } else {
-    echo "Erreur lors du téléchargement du fichier CSV." . PHP_EOL;
+    echo json_encode(['error' => 'Erreur lors du téléchargement du fichier CSV.']);
 }
